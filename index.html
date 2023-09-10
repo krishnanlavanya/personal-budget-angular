@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A personal budget management app for tracking expenses and managing finances that makes life easier for everyone.">
-    <title>Personal Budget</title>
+    <title>Personal Budget Management App - Track Expenses and Finances</title>
     <link rel="stylesheet" href="/pb/reset.css">
     <link rel="stylesheet" href="/pb/main.css">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 <body>
+    <button class="skip-button" onclick="skipToContent()">Skip to main content</button>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+    <nav class="menu">
         <ul>
             <li><a href="/pb/">Homepage</a></li>
             <li><a href="/pb/about.html">About</a></li>
@@ -20,6 +20,7 @@
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
+
     <div id="main-content"></div>
     
     <div class="hero">
@@ -51,6 +52,7 @@
             </div>
     
             <div class="text-box">
+
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
@@ -107,6 +109,14 @@
             All rights reserved &copy; Fabio Nolasco
         </div>
     </footer>
+
+    <script>
+        function skipToContent() {
+            document.querySelector('#main-content').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
