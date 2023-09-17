@@ -25,6 +25,10 @@
             "budget": 50
         },
         {
+            "title":"License fee",
+            "budget": 75
+        }
+        {
             "title":"Bank Balance",
             "budget": 1
         }
