@@ -9,7 +9,7 @@ app.get('/hello', (req, res) => {
   });
 
   app.get('/budget', (req, res) => {
-    const data=require('./step3.json')
+    const data=require('./new.json')
     res.json(data);
   });
   
