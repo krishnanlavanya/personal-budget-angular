@@ -9,8 +9,7 @@ app.get('/hello', (req, res) => {
   });
 
   app.get('/budget', (req, res) => {
-    const data=require('./new.json')
-    res.json(data);
+    res.send(budget);
   });
   
 app.listen(port, () => {
