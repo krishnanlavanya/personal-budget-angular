@@ -1,0 +1,33 @@
+.breadcrumbs {
+  margin: 10px 0;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumbs li::after {
+  content: '>';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.breadcrumbs li:last-child::after {
+  content: none; /* Remove the ">" after the last breadcrumb */
+}
+
+.breadcrumbs li a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.breadcrumbs li a:hover {
+  text-decoration: underline;
+}
